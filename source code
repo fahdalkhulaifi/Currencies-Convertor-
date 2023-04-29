@@ -1,0 +1,89 @@
+#include <iostream>
+using namespace std;
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(int argc, char** argv) {
+	 double i;
+	 double x;
+	 double y;
+	 double z;
+	
+	cout<<"1: Dollar to Euro"<<endl<<"2: Euro to Dollar"<<endl;
+	cin>>i;
+	int currencies = i;
+	switch (currencies) {
+		case 1:
+	    	cout << "Enter The Amount of Dollar: ";
+	    	cin>>x;
+	    	y = x * 0.91;
+	    	if(y > 1 && x > 1){
+				cout<<x<<" Dollars = "<<y<<" Euros"<<endl;
+			}
+			else if(y < 1 && x < 1){
+				cout<<x<<" Dollar = "<<y<<" Euro"<<endl;
+			}
+			else if(y > 1 && x < 1){
+				cout<<x<<" Dollar = "<<y<<" Euros"<<endl;
+			}
+			else if(y < 1 && x > 1){
+				cout<<x<<" Dollars = "<<y<<" Euro"<<endl;
+			}
+			else if (y == 1 && x == 1){
+				cout<<x<<" Dollar = "<<y<<" Euro"<<endl;
+			}
+			else if (y !=1 && x !=1){
+				cout<<x<<" Dollars = "<<y<<" Euros"<<endl;
+			}
+			else if (y = 1 && x !=1){
+				cout<<x<<" Dollars = "<<y<<" Euro"<<endl;
+			}
+			else if (y !=1 && x == 1){
+				cout<<x<<" Dollar = "<<y<<" Euros"<<endl;
+
+			}
+			else{
+				cout<<"Erorr 404"<<endl;
+			}
+			
+	    	break;
+	  	case 2:
+	    	cout << "Enter The Amount of Euro: "<<endl;
+	    	cin>>x;
+	    	z = x * 1.1;
+		    y = z;
+		    if(y > 1 && x > 1){
+				cout<<x<<" Euros = "<<y<<" Dollars"<<endl;
+			}
+			else if(y < 1 && x < 1){
+				cout<<x<<" Euro = "<<y<<" Dollar"<<endl;
+			}
+			else if(y > 1 && x < 1){
+				cout<<x<<" Euro = "<<y<<" Dollars"<<endl;
+			}
+			else if(y < 1 && x > 1){
+				cout<<x<<" Euros = "<<y<<" Dollar"<<endl;
+			}
+			else if (y == 1 && x == 1){
+				cout<<x<<" Euro = "<<y<<" Dollar"<<endl;
+			}
+			else if (y !=1 && x !=1){
+				cout<<x<<" Euros = "<<y<<" Dollars"<<endl;
+			}
+			else if (y = 1 && x !=1){
+				cout<<x<<" Euros = "<<y<<" Dollar"<<endl;
+			}
+			else if (y !=1 && x == 1){
+				cout<<x<<" Euro = "<<y<<" Dollars"<<endl;
+
+			}
+			else{
+				cout<<"Erorr 404"<<endl;
+			}
+			
+	   	    break;
+
+	  	default:
+	   	 	cout << "Error 404";
+	}
+	return 0;
+}
